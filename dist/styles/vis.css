@@ -1,0 +1,85 @@
+.vis svg{
+  padding-left: 50px;
+  display: block;
+  margin: auto;
+}
+
+.vis text {
+  font: 10px sans-serif;
+}
+
+.vis header {
+  text-align: center;
+}
+
+.vis h1{
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-weight: 200;
+}
+
+.vis .dot {
+  stroke: white;
+}
+
+.vis .axis path, .vis .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.vis .label {
+  fill: #777;
+}
+
+.vis .industry-label {
+  font: 500 100px "Helvetica Neue";
+  fill: #ddd;
+}
+
+.vis .industry.label.active {
+  fill: #aaa;
+}
+
+.vis .overlay {
+  fill: none;
+}
+
+.vis .tick line{
+  opacity: 0.2;
+}
+
+/* Overall container for the tooltip */
+.tooltip{
+  border: 1px solid #bbbbbb;
+  color: black;
+  background-color: white;
+  position: absolute;
+  font-family: Arial, Helvetical, sans-serif;
+  padding: 10px;
+  max-width: 200px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+.tooltipTitle{
+  font-size: 12px;
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+
+.toolTipLine{
+  line-height: 15px;
+}
+
+.tooltipMetricName{
+  color: #666;
+  font-weight: normal;
+  font-size: 11px;
+  padding-right: 5px;
+}
+
+.vis .tooltipMetricValue{
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+}
+
+
