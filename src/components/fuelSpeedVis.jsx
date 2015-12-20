@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import d3                   from 'd3';
 import _                    from 'lodash';
 
-// for development: 
-import { hardData }             from '../hard-coded-response';
-
 export default class FuelSpeedVis extends Component {
 
   componentDidMount() {
