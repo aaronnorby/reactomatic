@@ -2,6 +2,7 @@ import $ from 'jQuery';
 
 export const REQUEST_API_DATA = 'REQUEST_API_DATA';
 export const RECEIVE_API_DATA_SUCCESS = 'RECEIVE_API_DATA_SUCCESS';
+export const RECEIVE_API_DATA_ERROR = 'RECEIVE_API_DATA_ERROR';
 export const INITIAL_STATE = {apiData: {}};
 
 function requestApiData(apiPath) {
@@ -18,6 +19,12 @@ function receiveApiDataSucess(json) {
   };
 }
 
+function receiveApiDataError() {
+  return {
+    type: RECEIVE_API_DATA_ERROR
+  }
+}
+
 export function fetchAutomaticApiData(apiPath) {
   return dispatch => {
     dispatch(requestApiData(apiPath));
@@ -32,6 +39,7 @@ export function fetchAutomaticApiData(apiPath) {
         dispatch(receiveApiDataSucess(data));
       },
       error: function(xhr, status, err) {
+        dispatch(receiveApiDataError());
         console.log('api request failure: ', err);
       }
     });
