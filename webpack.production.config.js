@@ -19,8 +19,7 @@ module.exports = {
     extensions: ['', '.js', '.jsx']
   },
   output: {
-    path: path.join(__dirname + 'dist'),
-    publicPath: '/',
+    path: './dist',
     filename: 'bundle.js'
   },
 };
