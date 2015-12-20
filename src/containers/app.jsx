@@ -20,14 +20,15 @@ export default class App extends Component {
         <div id="app-view">
           Hello from App!
         </div>  
-        <FuelSpeedVis />
+        <FuelSpeedVis apiData={this.props.apiData} />
       </div>
     )
   }
 }
 
 App.propTypes = {
-  fetchAutomaticApiData: React.PropTypes.func
+  fetchAutomaticApiData: React.PropTypes.func,
+  apiData: React.PropTypes.object
 }
 
 // Turn App into a connected component. Since this is a small app, it will be

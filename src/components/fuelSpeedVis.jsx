@@ -8,7 +8,14 @@ import { hardData }             from '../hard-coded-response';
 export default class FuelSpeedVis extends Component {
 
   componentDidMount() {
-    this.generateVis(this.d3Node, hardData.results);
+    //this.generateVis(this.d3Node, hardData.results);
+  }
+
+  componentDidUpdate() {
+    if (this.props.apiData.results) {
+      console.log('using real data');
+      this.generateVis(this.d3Node, this.props.apiData.results);
+    }
   }
 
   generateVis(node, data) {

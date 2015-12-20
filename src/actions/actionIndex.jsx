@@ -29,7 +29,6 @@ export function fetchAutomaticApiData(apiPath) {
         'Authorization': 'Bearer 8fb6bd2a78ebeb220db03b2f04f93a05587791d9'
       },
       success: function(data) {
-        console.log('success: ', data);
         dispatch(receiveApiDataSucess(data));
       },
       error: function(xhr, status, err) {
