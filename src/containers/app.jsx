@@ -2,7 +2,6 @@ import React, { PropTypes, Component } from 'react';
 import { connect }                     from 'react-redux';
 import { fetchAutomaticApiData }       from '../actions/actionIndex';
 import FuelSpeedVis                    from '../components/fuelSpeedVis';
-import AvgFuelEff                      from '../components/AvgFuelEff';
 
 export default class App extends Component {
 

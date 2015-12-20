@@ -6,6 +6,8 @@ import { Provider }                      from 'react-redux';
 import reducer                           from './reducers/reducer';
 import { AppContainer }                  from './containers/app';
 
+require('./styles/vis.scss');
+
 // we need the thunk middleware so we can have async (eg, ajax calls) actions passed to the store
 const createStoreWithMiddleware = applyMiddleware(thunkMiddleware)(createStore);
 
