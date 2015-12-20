@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack -p --config webpack.production.config.js && node server.js"
+    "postinstall": "webpack -p --config webpack.production.config.js",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
