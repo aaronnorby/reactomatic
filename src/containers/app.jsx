@@ -1,7 +1,8 @@
 import React, { PropTypes, Component } from 'react';
-import { connect } from 'react-redux';
-import { fetchAutomaticApiData } from '../actions/actionIndex';
-import FuelSpeedVis       from '../components/fuelSpeedVis';
+import { connect }                     from 'react-redux';
+import { fetchAutomaticApiData }       from '../actions/actionIndex';
+import FuelSpeedVis                    from '../components/fuelSpeedVis';
+import AvgFuelEff                      from '../components/AvgFuelEff';
 
 export default class App extends Component {
 
@@ -17,9 +18,6 @@ export default class App extends Component {
   render() {
     return (
       <div>  
-        <div id="app-view">
-          Hello from App!
-        </div>  
         <FuelSpeedVis apiData={this.props.apiData} />
       </div>
     )

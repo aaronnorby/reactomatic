@@ -3,7 +3,7 @@ import $ from 'jQuery';
 export const REQUEST_API_DATA = 'REQUEST_API_DATA';
 export const RECEIVE_API_DATA_SUCCESS = 'RECEIVE_API_DATA_SUCCESS';
 export const RECEIVE_API_DATA_ERROR = 'RECEIVE_API_DATA_ERROR';
-export const INITIAL_STATE = {apiData: {}};
+export const INITIAL_STATE = {apiData: {}, isFetching: false};
 
 function requestApiData(apiPath) {
   return {
