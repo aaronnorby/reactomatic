@@ -2,7 +2,7 @@ var path = require('path');
 
 module.exports = {
   entry: [
-    path.resolve(__dirname, './src/index.jsx')
+    __dirname + './src/index.jsx'
   ],
   module: {
     loaders: [{
@@ -19,7 +19,7 @@ module.exports = {
     extensions: ['', '.js', '.jsx']
   },
   output: {
-    path: path.resolve(__dirname, '/dist'),
+    path: __dirname + './dist',
     publicPath: '/',
     filename: 'bundle.js'
   },
