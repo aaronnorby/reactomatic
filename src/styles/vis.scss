@@ -2,6 +2,7 @@
 
 html {
   font-size: 16px;
+  background: #F4ADFF;
 }
 
 .vis {
@@ -20,21 +21,19 @@ html {
 
 .vis header {
   text-align: center;
-}
-
-.vis header {
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-weight: 200;
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1em;
+    color: #7a7a84;
+  }
 }
 
-.vis h1 {
-  font-size: 1.5em;
-}
-
-.vis h2 {
-  font-size: 1em;
-  color: #7a7a84
-}
 
 .vis .dot {
   stroke: white;
