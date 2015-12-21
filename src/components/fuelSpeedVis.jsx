@@ -126,7 +126,7 @@ export default class FuelSpeedVis extends Component {
                               </div>\
                               <div class="tooltipLine">\
                                   <span class="tooltipMetricName">Avg Speed</span>\
-                                  <span class="tooltipMetricValue"><%= distance_m/duration_s %></span>\
+                                  <span class="tooltipMetricValue"><%= Math.round(distance_m/duration_s) %></span>\
                               </div>\
                               <div class="tooltipLine">\
                                   <span class="tooltipMetricName">Hard Accels</span>\
