@@ -19,8 +19,8 @@ export default class FuelSpeedVis extends Component {
     // received
 
     const margin = {top: 20, right: 100, bottom: 30, left: 10},
-      width = 1300 - margin.left - margin.right,
-      height = 500 - margin.top - margin.bottom;
+      width = 1100 - margin.left - margin.right,
+      height = 425 - margin.top - margin.bottom;
 
     const x = d3.scale.linear()
       .range([0, width]);
@@ -81,8 +81,8 @@ export default class FuelSpeedVis extends Component {
     // well as transitions due to new data coming in
 
     const margin = {top: 20, right: 100, bottom: 30, left: 10},
-      width = 1300 - margin.left - margin.right,
-      height = 500 - margin.top - margin.bottom;
+      width = 1100 - margin.left - margin.right,
+      height = 425 - margin.top - margin.bottom;
 
     const x = d3.scale.linear()
       .range([0, width]);
